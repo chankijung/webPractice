@@ -1,7 +1,6 @@
 @charset "ECU-KR";
-div{background-color: pink; overflow:auto; height: 400px;}
-div ul{list-style: none; display:grid;}
-div ul li{text-align:center;  width:100px; height:100px; overflow: hidden;}
-.list{text-decoration:none; color:white; background-color: rgb(210, 24, 24); ;
-    padding-bottom:50%; padding-top: 50%; padding-left: 50%; padding-right: 50%;}
-.list:hover{background-color: gray;  transition: all 0.25s; }
+ul{background-color: pink; overflow:auto; height: 400px;}
+li{list-style: none; width:100px; padding:20px; text-align:center; overflow: hidden;background-color: rgb(210, 24, 24); }
+li:hover{background-color: gray;  transition: all 0.25s; }
+.list{text-decoration:none; color:white;  ;
+   }

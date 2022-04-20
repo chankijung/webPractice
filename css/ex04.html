@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+<style type="text/css">
+    *{margin:0}
+    .wrap{width:1000px; margin:auto; background-color: gray;}
+    /* wrap에 기본사이즈를 지정해놓고 씀 */
+    .test{
+         flex-flow:row;display: flex;
+        /* 종속되어있는 것들에 flex(가로배치) */
+    }
+    .div{
+        width:33.333%; height: 200px;
+    }
+    .div1{
+        order:2;background-color: red; display: flex;
+        /* 서로 묶여있는 것들끼리 order 적용가능 */
+    }
+    .div2{
+        order:3;  background-color: green;
+    }
+    .div3{
+        order:1; background-color: aqua;
+    }
+    .div4{width:33.333%; background-color: beige;
+            margin:0 auto;}
+</style>
+</head>
+<body>
+   <div class="wrap">
+       <div class="test">
+            <div class="div div1">
+               <div class="div4">1</div>
+               <div class="div4">2</div>
+               <div class="div4">3</div>
+            </div>
+            <div class="div div2"><h1>2</h1></div>
+            <div class="div div3"><h1>3</h1></div>
+        </div>
+   </div>
+</body>
+</html>

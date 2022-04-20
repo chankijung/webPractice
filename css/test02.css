@@ -1,0 +1,11 @@
+@charset "UTF-8";
+*{ margin:0;}
+h1{font-size: 20pt; text-align: center; padding:10px}
+.wrap{ width:1000px; margin: auto;background-color: gray; 
+    }
+.div{width:33% ;height: 200px; }
+.he{ width:70%; background-color: red; }
+.div1{display: flex;}
+.nav{width:25%; background-color: aqua; order:1;}
+.sec{width:45%;background-color: beige; order:2;}
+.foo{width:70%;background-color: yellowgreen;}
