@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css"> 
+/* *{
+	color :red;
+	background-color: rgb(114, 114, 102);
+} */
+/* h1{ background-color: aqua; color:orange; }
+.test:active{background-color: rgb(175, 100, 100); color:navy;}
+#test{background-color: rgb(103, 4, 4); color:rgb(112, 112, 161);} */
+/* test-decoration : a 태그에 존재하는 밑줄 */
+a:link{color:pink; text-decoration: none;}
+a:visited{color:red;}
+a:hover{text-decoration: overline; color:black; font-size:40pt;
+		transition:all 0.5s linear 0.5s;}
+		/* transition 애니메이션 효과 */
+a:active{background-color: yellow;}
+
+.img{width:180px; height:220px;}
+.img:hover{width:350x; height:350px; transition: all 0.5s}
+</style>
+</head>
+<body>
+	<img class="img" src="최근상품04.jpg">
+	<br><br>
+	<a href="#">test</a>
+	<a href="#">test</a>
+	<!-- 
+		.test나 #test뒤에 :(콜론)붙이면 
+		가상선택자가 되어서 각종 효과 넣을 수 있음 
+		link : 웹 문서에서 사용자가 방문하지 않았던 곳을 표시
+		visited : 웹 문서에서 사용자가 방문한 곳
+		hover : 마우스가 올라갔을 경우
+		active : 클릭이 되는 순간
+	-->
+
+	
+	<h1 id="test">test. id선택자</h1>
+	<h1 class="test">test. class 선택자</h1>
+	<h1>asdfaasdf</h1>
+	<p>asdfasdfff</p>
+</body>
+</html>

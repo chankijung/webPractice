@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+   nav ul{ list-style: none; display: flex; 
+            justify-content: flex-end; }
+   nav ul li {
+   /*
+      숫자 하나 들어오면 위,오,아,왼쪽 모두 적용
+      숫자 2개 : 위,아래쪽. 왼,오른쪽
+      숫자 4개 : 위에서 부터 시계방향으로 4군데 적용
+   */
+      margin: 0 10px; padding: 10px;
+   }
+   .nav_a {text-decoration: none; color: white;  }
+   .nav_a:hover {
+      color: orange;
+      border-bottom: 1px solid orange;
+      padding-bottom: 3px;
+      transition : all 0.25s;
+   }
+   nav { background-color: black; }
+</style>
+</head>
+<body>
+   <nav>
+      <ul>
+         <li> 
+            <a class='nav_a' href="#">HOME</a> </li>
+         <li> 
+            <a class='nav_a' href="#">BOARD</a> </li>
+         <li> 
+            <a class='nav_a' href="#">MEMBERSHIP</a> </li>
+      </ul>
+   </nav>
+</body>
+</html>

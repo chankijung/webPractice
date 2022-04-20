@@ -1,0 +1,7 @@
+@charset "EUC-KR";
+div{background-color: blue;height:100px;
+    overflow: hidden;}
+    /* overflow: hidden 부모 범위에서 넘치는 것을 숨김 */
+div div{
+    background-color: red; width: 200px; height: 200px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input태그 실습</title>
+</head>
+<body>
+	<div style="background-color : pink;">
+	<span style="background-color: olive; ">블럭안에 넣어서 표현 할때 사용</span>
+	<span style="background-color: orange; ">블럭안에 넣어서 표현 할때 사용</span>
+	<span style="background-color: lime; ">블럭안에 넣어서 표현 할때 사용</span>
+	</div>
+
+<hr>
+<div style="background-color: aqua; ">영역을 나누고자 할때 사용</div>
+<div style="background-color: grey; ">영역을 나누고자 할때 사용</div>
+<div style="background-color: blue; ">영역을 나누고자 할때 사용</div>
+<span style="background-color: olive; ">블럭안에 넣어서 표현 할때 사용</span>
+<span style="background-color: orange; ">블럭안에 넣어서 표현 할때 사용</span>
+<span style="background-color: lime; ">블럭안에 넣어서 표현 할때 사용</span>
+
+<!--
+	 div는 블럭단위.
+	영역을 나눌때 씀
+	 -->
+<fieldset>
+	<legend><b>취미 조사</b></legend>
+	책읽기<input type="checkbox">
+	코딩<input type="checkbox">
+	잠자기<input type="checkbox">
+</fieldset>
+
+<!-- submit을 누르면 ~로 이동 -->
+<!--
+	검색결과가 url에 보이는 것 Get방식
+	보낼 수 있는 데이터가 256바이트로 한정적
+	대용량이면 전송이 전부 안될 수 있음
+	안보이는 방식은 Post 방식
+ -->
+ <!-- https 통신규약 -->
+<form action="https://www.naver.com" method="get">
+	<textarea rows="5" cols="30" name="con"></textarea><br>
+	<select size="2" name="sel">
+		<option value="1">사과
+		<option value="2">배
+		<option value="3">두릅
+	</select>
+	
+	<br>
+	<input type="text" name="query" value="test"><br>
+	<input type="password" name="pwd"><br>
+	10대<input type="radio" name="a" value="10대" checked><br>
+	<!-- name에 속성값을 넣는 것 -->
+	<input type="submit" value="전송">
+	<input type="reset" value="초기화">
+	<input type="button"
+		onclick="location.href='ex01.html'"
+		value="버튼">
+	<!-- 
+		버튼은 자바스크립트와 같이 사용함
+		클릭이 일어나면 해당 위치로 이동~ 같은 식
+		폼과 버튼은 사실 무관
+	 -->
+</form>
+<hr>	
+도박<input type="checkbox"><br>
+지뢰찾기<input type="checkbox"><br>
+멍<input type="checkbox"><Br>
+카드<input type="checkbox"><br>
+<hr>
+10대<input type="radio" name="a" checked>
+20대<input type="radio" name="a">
+30대<input type="radio" name="a111">
+40대<input type="radio" name="a111">
+<hr>
+	<input type="button" value="버튼"><br> 
+	<input type="submit" value="제출"><br> 
+	<input type="reset" value="초기화"><br> 
+	<input type="radio"><br> 
+	<input type="checkbox"><br> 
+	<input type="date"><br> 
+	<input type="email"><br>
+  	<input type="text"><br>
+    <input type="password" value="비밀번호"><br>
+</body>
+</html>

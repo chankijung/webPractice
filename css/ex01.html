@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 실습2</title>
+<style>
+    nav ul{list-style: none; display: flex;justify-content: flex-start; }
+/* 
+        list-style 리스트의 점, 숫자 같은거
+        display flex : 가로로 배열
+        justify content : 
+     */
+
+    nav ul li{
+        margin:5% 5%; margin-top: 5%;
+        /* 
+            숫자 하나 들어오면 위, 오, 아, 왼 모두 적용
+            숫자 2개 : 위,아래. 왼,오른쪽
+            숫자 4개 : 위에서부터 시계방향으로 4군데 적용
+         */
+        padding: 3%;  
+    }
+    .nav_a{text-decoration: none; color:white;} 
+    .nav_a:hover{color:orange; 
+        border-bottom: 1px solid orange; 
+        padding-bottom:3px; 
+        transition: all 0.25s;}
+    /* id는 큰 범위, class는 좀 작은 범위로 생각 */
+    nav{background-color: black;}
+    
+
+
+
+
+</style>
+</head>
+<body>
+    <a href="#">123123123</a>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">MEMBERSHIP</a></li>
+    </ul>
+    <nav>
+        <ul>
+            <li ><a class="nav_a" href="#">HOME</a></li>
+            <li ><a class="nav_a"href="#">BOARD</a></li>
+            <li ><a class="nav_a"href="#">MEMBERSHIP</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

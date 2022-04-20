@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+* {   color: red; background-color: yellow; }
+*/
+h1 { background-color: aqua; color: blue; }
+.test:active {background-color:gray; color: navy; }
+#test {background-color:orange; color: purple; }
+/* text-decoration : a태그에 존재하는 밑줄 */
+a:link {color:hotpink; text-decoration: none;}
+a:visited { color: red;}
+a:hover { text-decoration: overline; color: black;
+         font-size: 90pt;
+         transition: all 0.5s linear 0.1s;
+         }
+a:active { background-color: yellow; }
+.img {width:100px; height:100px;}
+.img:hover {width:120px; height:120px;
+          transition: all 0.1s;}
+</style>
+</head>
+<body>
+   <img class="img" src="test.jpg">
+<hr>
+   <a href="#">test</a>
+   <a href="#">test</a>
+<!-- 
+   link : 웹 문서에서 사용자가 방문하지 않았던 곳을 표시
+   visited : 웹 문서에서 사용자가 방문한 곳
+   hover : 마우스가 올라갓을 경우
+   active : 클릭이 되는 순간
+ -->
+
+
+   <h1 id="test">test. id 선택자</h1>
+   <h1 class="test">test. class 선택자</h1>
+   <h1>aaaaaa</h1>
+   <p>aaaaaa</p>
+</body>
+</html>
+
+
+

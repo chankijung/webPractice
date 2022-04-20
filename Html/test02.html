@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제풀이</title>
+</head>
+<body>
+    <form action="test01.html" method="get">
+        <table>
+            <th>
+                <div>다음을 <span style="background-color: bisque;">내용에 맞게 입력</span>하세요</div>
+            </th>
+            <tr>
+                <td>전공 입력</td>
+                <td><select size="1" name="sel">
+                <option value="1">소프트웨어
+                <option value="2">하드웨어
+                <option value="3">네트워크
+                    </select>
+                </td>
+                <td></td>
+                <td rowspan="4">
+                    <a href="ex01.html">
+                    <img src="C:\자바 취업반\자바\jsp_workspace\Html\KakaoTalk_20220418_130953273.jpg"
+                     width="200px" height="200px">
+                </a></td>
+            </tr>
+            <tr>
+                <td>
+                이름 
+                </td>
+                <td colpan="2">
+                    <input type="text" name="name"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                아이디
+                </td>
+                <td colspan="2">
+                    <input type="id" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                비밀번호
+                </td>
+                <td colspan="2">
+                    <input type="password" name="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                <fieldset>
+                    <legend><b>성별조사</b></legend>
+                    여성<input type="radio" name="gender">
+                    남성<input type="radio" name="gender">
+                </fieldset>
+            </td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                <fieldset>
+                    <legend><b>취미조사</b></legend>
+                    책읽기<input type="checkbox">
+                    공부하기<input type="checkbox" >
+                    코딩하기<input type="checkbox">
+                    잠하기<input type="checkbox">
+                </fieldset>
+                </td>
+            </tr>
+           <tr>
+                <td colspan="4">
+                    <div><b>하고싶은 말</b><br>
+                    <textarea row="30" cols="40" name="con"></textarea>
+                </div></td>
+
+           </tr>
+           <tr>
+               <td colspan="3">
+                   <input type="submit"  value="완성">
+                   <input type="reset" value="초기화">
+               </td>
+           </tr>
+
+        </table>
+    </form>
+</body>
+</html>
