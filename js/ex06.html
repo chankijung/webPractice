@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간</title>
+
+
+    
+</head>
+<body>
+    <div id='digClock01'></div>
+    <button type="button" onclick="test()">클릭</button>
+    <button type="button" onclick="start()">시작</button>
+    <button type="button" onclick="end()">종료</button>
+    <script type="text/javascript">
+        var e
+        var cnt =1
+        function start(){
+            var today = new Date()
+            var day = today.getMonth()+1+'월'
+                        +today.getDate()+'일'
+                        +today.getHours()+'시'
+                        +today.getMinutes()+'분'
+                        +today.getSeconds()+'초'
+            dig=document.getElementById('digClock01')
+            dig.innerHTML =day
+           // e = setTimeout('start()',1000)
+            //자기자신을 호출하는 시간관련 기능
+        }
+        function test(){
+            e= setInterval(start, 1000)
+        }
+        function end(){
+            //clearTimeout(e)
+            clearInterval(e)
+        }
+    </script>
+</body>
+</html>

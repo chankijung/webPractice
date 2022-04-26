@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+<script type="text/javascript">
+        function test(){
+            id=document.getElementById('id')
+            id2=document.getElementById('id2')
+            console.log(id)
+            console.log(id2)
+            id2.value = id.value
+            id.value=""
+            lb=document.getElementById('label')
+            lb.innerHTML="땡"
+            // 안쪽의 label값을 바꿔줌
+        }
+        function test2(){
+            id=document.getElementById('id')
+            lb=document.getElementById('label')
+            console.log(id.value.length)
+            if(id.value.length<6){
+                lb.innerHTML="<b style='color:red;'>길이가짧다</b>"
+            }else{
+
+                lb.innerHTML="<b style='color:blue;'>존재하는 id</b>"
+            }
+
+        }
+        var bool=true
+        function test3(){
+            img=document.getElementById('img')
+            img.src = 'car03.png'
+            img.style='width:300px; height:300px'
+        }
+    </script>
+    </head>
+<body>
+    <img id="img" src="car02.png" width="100px" height="100px" onclick="test3()">
+    <hr>
+    <input type="text" id="id" oninput="test2()">
+        <label id="label">워라밸 ㄱㄱ</label><br>
+    <input type="text" id="id2"><br>
+    <input type="button" value="btn" onclick="test()"><br>
+</body>
+</html>

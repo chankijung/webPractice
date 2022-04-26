@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+<body>
+    <script>
+        var num=0
+        document.write('실행 : '+num)
+        // 작은 따옴표, 큰 따옴표 구분 없음
+    </script>
+    <input type="button" onclick="test()"
+            value="click"><br>
+            <!-- 자바스크립트는 브라우저에서 f12로 콘솔을 자주 확인해야 함 -->
+    <script type="text/javascript">
+        // var num= 100
+        // var obj = null
+        num=100
+        obj =null
+        document.write(typeof num+"<br>")
+        document.write(typeof obj+"<br>")
+        document.write(typeof [1,2,3]+"<br>")
+        document.write(typeof 'test'+"<br>")
+        document.write(typeof {'key':'value'}+"<br>")
+        
+        num = prompt('수 입력')
+        document.write('<b>입력 값 : </b>'+num)
+    </script>
+</body>
+</html>

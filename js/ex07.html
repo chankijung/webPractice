@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<script>
+    function init(){
+        alert('초기화')
+    }
+function over(obj){
+    obj.style.color ='red'
+
+}
+function out(){
+    document.getElementById('h1').style.color='black'
+}
+
+</script>
+
+
+</head>
+<body onload="init()">
+    <h1 id="h1" onmouseover="over(this)" onmouseout="out()">
+    Mouse over this text 
+</h1>
+</body>
+</html>

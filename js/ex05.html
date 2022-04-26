@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr=['aaa', 'bbb', 'ccc']
+        function test(){
+            for(i=0;i<arr.length;i++){
+                document.write(arr[i]+",")
+            }
+            document.write("<hr>")
+            arr.push('ddd','eee')
+            document.write(arr)
+            // 젤 뒤에 붙이는 것
+
+            document.write("<hr>")
+            var re =arr.pop()
+            document.write(arr)
+            document.write('빠진값 : '+re)
+            //젤 뒤에꺼 뺌
+           
+            document.write("<hr>")
+            var re =arr.unshift('jjj','kkk')
+            document.write(arr)
+            //앞 쪽에 추가
+
+            document.write("<hr>")
+            var re =arr.shift()
+            document.write(arr)
+            document.write("빠진값: "+re)
+        }
+
+    </script>
+    <button type="button" onclick="test()">클릭</button>
+</body>
+</html>

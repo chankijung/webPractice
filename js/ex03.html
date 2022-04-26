@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var kor01=1234
+        function test(){
+            document.write('test 실행')
+            let kor=95
+            kor=90
+            kor=100
+            // var는 재정의가 가능함
+            // let은 재정의 x
+            document.write('test(kor01) : '+kor01)
+            return "안녕하세요"
+        }
+        var re =test()
+        document.write('밖(kor01) :'+kor01 )
+        document.write('밖(re)'+re+"<hr>")
+        // var kor = 95 했을 때는 지역변수여서 밖이 실행이 안됐음
+        // kor =95 했을때는 전역변수?가 되는듯
+        // test()가 먼저 호출이 돼야 kor이 만들어지기 때문에 test()를 먼저 실행시켜야 함
+        function test02(name, age, t1,t2){
+            document.write(name+age+t1+t2)
+            if(t1 == undefined){
+                alert('값 없음')
+            }
+        }
+        function test03(){
+            for(i=0;i<arguments.length;i++){
+                document.write(arguments[i]+',')
+            }
+
+        }
+    </script>
+    <button type="button" onclick="test02('홍',21)">클릭</button>
+    <button type="button" onclick="test03(1,2,3,4,5)">클릭</button>
+
+</body>
+</html>

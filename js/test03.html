@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>겔러리</title>
+<style>
+#image{
+   width:500px;
+   height:450px;
+}
+#down{
+   background:pink;
+   width:500px;
+   height:50px;
+   text-align:center;/*div 안에 컨텐츠의 정렬*/
+}
+#pic{
+   width:100%;
+   height:100%;
+}
+</style>
+<script>
+var x = 1;
+function prev(){
+   if(x == 1)
+      x = 8;
+   else
+      x = x-1;
+   document.getElementById("pic").src="최근상품0"+x+".jpg";
+   console.log("이전 : "+x);
+}
+//현재 보고 있는 사진의 다음 사진 나오게...처리
+function next(){
+   if(x == 8)
+      x = 1;
+   else
+      x = x+1;
+   document.getElementById("pic").src="최근상품0"+x+".jpg";
+   console.log("다음 : "+x);
+}
+</script>
+</head>
+<body>
+   <div id="image">
+      <img src="최근상품01.jpg" id="pic"/>
+   </div>
+   <div id="down">
+      <input type="button" value="이전사진" onClick="prev()"/>
+      <input type="button" value="다음사진" onClick="next()"/>
+   </div>
+</body>
+</html>
