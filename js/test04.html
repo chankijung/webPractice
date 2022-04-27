@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>실습</title>
     <script type="text/javascript">
-        var arr=['최근상품01.jpg','최근상품02.jpg','최근상품03.jpg','최근상품04.jpg','최근상품05.jpg','최근상품06.jpg','최근상품07.jpg','최근상품08.jpg']
-        for(i=0;i<arr.length;i++){
-            document.write(arr[i]+",")
-        }
+        var arr = ["최근상품01.jpg","최근상품02.jpg","최근상품03.jpg","최근상품04.jpg","최근상품05.jpg","최근상품06.jpg","최근상품07.jpg","최근상품08.jpg"]
+       function prev(){
+        if(x == 0) 
+        x = list.length-1;
+	    else   x = x-1;
+	document.getElementById("pic").src="../resources/images/"+list[x]+".jpg";
+       }
+       function next(){
+          if(x==list.length -1)
+       }
     </script>
 
 
 </head>
-<body>
-    <button type="button" onclick=""></button>
+<body onload="init()">
+
+    <div id="img">
+        <img src="최근상품01.jpg" id="pic"/>
+    <h1 id="h1" onmouseover="over(this)" onmouseout="out()">마우스</h1>
+    </div>
 </body>
 </html>

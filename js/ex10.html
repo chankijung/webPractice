@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+    function myFocus(pwd){
+        pwd=document.getElementById('pw')
+        pwd.focus()
+        history.forward();
+        //다음 페이지로 이동
+    }
+    function newWin(){
+        window.open('popup.html',"","width=300, heigth=300") //새창
+       // window.open('popup.html',"_self") //현재 창
+    }
+    function chk(){
+        pwd = document.getElementById('id')
+        if(id.value ==""){
+            alert('필수 항목 입니다')
+        }else{
+            fo.submit()
+        }
+    }
+    function test(){
+        location.href='ex09_2.html'
+        //a 태그와 비슷하게 이동만 하는 것
+    }
+</script>
+</head>
+<body>
+    <form id='fo' action="ex09_2.html">
+        <input type="text" id="id">(필수)<br>
+        <input type="button" onclick="chk()" value="로그인"><br>
+        <input type="button" onclick="test()" value="로그인">
+        <a href="ex09_2.html">이동</a><br>
+        <!-- a href는 값을 가지고 넘어가는건 아님 -->
+    </form>
+
+    <hr>
+    <input type="button" onclick="newWin()" value="보내기">
+    
+
+    <hr>
+    <input type="text"><br>
+    <input type="text" id="pw"><br>
+    <input type="button" onclick="myFocus()">
+</body>
+</html>

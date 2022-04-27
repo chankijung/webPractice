@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d{display: flex}
+</style>
+
+<script>
+
+function test(){
+    var serverData =['최근상품01.jpg','최근상품02.jpg','최근상품03.jpg','최근상품04.jpg','최근상품05.jpg','최근상품06.jpg','최근상품07.jpg','최근상품08.jpg',]
+    var img = document.getElementById('img')
+    for(i=0;i<serverData.length;i++){
+        var opt=document.createElement('option')
+        opt.value =serverData[i]
+        opt.innerHTML = serverData[i]
+        img.appendChild(opt)
+    }
+}
+function func1(){
+    div=document.getElementById('div')
+    h4=document.createElement('h4')
+    h4.innerHTML='<img id="img" src="'+serverData+'">'
+ 
+    div.appendChild(h4)
+}
+</script>
+<body onload="test()">
+   <div class="d">
+    <table id = 'table' class="table" border="1">
+        <tr>
+            <td><img onclick=" func1()" id="img" src="최근상품01.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()"id="img" src="최근상품02.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()"id="img"src="최근상품03.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()" id="img" src="최근상품04.jpg" width="100px" height="100px"></td>
+        </tr>
+        <tr>
+            <td><img onclick="func1()" id="img" src="최근상품05.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()" id="img" src="최근상품06.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()" id="img" src="최근상품07.jpg" width="100px" height="100px"></td>
+            <td><img onclick="func1()" id="img" src="최근상품08.jpg" width="100px" height="100px"></td>
+        </tr>
+    </table>
+    <div id="div"></div>
+    </div>
+    
+</body>
+</html>

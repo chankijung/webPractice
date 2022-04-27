@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+function test(){
+    var serverData = ['축구','야구','배구','농구']
+    var insert = document.getElementById('insert')
+    for(i=0; i< serverData.length ;i++){
+        var opt = document.createElement('option')
+        opt.value=serverData[i]
+        opt.innerHTML = serverData[i]
+        insert.appendChild(opt)
+    }
+    }
+    function func1(){
+        div = document.getElementById('div')
+        h1 = document.createElement('h1')
+        h1.innerHTML = '안녕하세요'
+        div.appendChild(h1)
+
+    }
+    function func2(){
+        document.getElementById('div').innerHTML=""
+    }
+
+
+</script>
+</head>
+<body onload="test()">
+    <select id="insert"></select>
+    
+    <div id="div"></div>
+    <button onclick="func1()">추가</button>
+    <button onclick="func2()">삭제</button>
+    
+</body>
+</html>

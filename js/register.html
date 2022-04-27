@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+    function myFocus(pwd){
+        pwd=document.getElementById('pw')
+        pwd.focus()
+
+    }
+    function myFoucs(id){
+        Id=document.getElementById('id')
+        Id.focus()
+    }
+    function chk(){
+        id=document.getElementById('id')
+        pw=document.getElementById('pw')
+        if(id.value=="" || pw.value==""){
+            alert('필 수 사 항')
+        }else{
+            fo.submit()
+        }
+    }
+    function correct(id1){
+        id=document.getElementById('id')
+        id1=document.getElementById('id1')
+        if(id1.value==id.value){
+            document.write('일치합니다')
+        }else{
+            document.write('다시 쓰세요')
+        }
+    }
+    function correct(pw1){
+        pw=document.getElementById('pw')
+        pw1=document.getElementById('pw1')
+        if(pw1.value==pw.value){
+            document.write('일치합니다')
+        }else{
+            document.write('다시 쓰세요')
+        }
+    }
+</script>
+</head>
+<body>
+    <form id= 'fo' action="test06.html">
+        <input type="text" id="id" name="id">(*필수사항입니다)<br>
+        <input type="text" id="pw" name="pw">(*필수사항입니다)<br>
+        <input type="text" onchange="correct(id1)" id="id1">Id 확인<br>
+        <input type="text" onchange="correct(pw1)"  id="pw1">pwd 확인<br>
+        <input type="button" onclick="chk()" value="로그인">
+   </form>
+</body>
+</html>
