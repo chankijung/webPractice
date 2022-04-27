@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #remove{
+            display: none;
+        }
+        #remove.a{
+            background-color: red; width:150px; height: 150px; margin:0 auto;
+        }
+        #remove.b{
+            background-color: blue; width:150px; height: 150px; margin:0 auto;
+        }
+        #remove.c{
+            background-color: yellow; width:150px; height: 150px; margin:0 auto;
+        }
+        #remove.d{
+            background-color: green; width:150px; height: 150px; margin:0 auto;
+        }
+    </style>
+    <script type="text/javascript">
+        function init(){
+            let btns =document.getElementById('btn')
+            for(i=0;i<btns.length;i++){
+                btns[i].addEventListener('click',btnTxt)
+            }
+        }
+        function btnTxt(event){
+            document.getElementById("target").innerText="버튼"+event.target.id+"클릭";
+            let btn =document.querySelector('#remove');
+            if(event.target.id==1)
+                btn.setAttribute('class','a')
+            if(event.target.id==2)
+                btn.setAttribute('class','b')
+            if(event.target.id==3)
+                btn.setAttribute('class','c')
+            if(event.target.id==4){
+                btn.setAttribute('class','d')
+                d();
+            }
+        }
+        function d(){
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="remove">
+        <h3 id="target"></h3>    
+    <div>
+    <button>버튼 1</button>
+    <button>버튼 2</button>
+    <button>버튼 3</button>
+    <button>자동</button>
+    <button>지우기</button>
+</body>
+</html>

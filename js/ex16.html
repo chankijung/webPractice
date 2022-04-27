@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style type="text/css">
+    img{width:250px;}
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.b1').click(function(){
+            $('img').animate({width:'100px'})
+        })
+        $('.b2').click(function(){
+            $('img').animate({width:'200px'})
+        })
+        $('.b3').click(function(){
+            $('img').animate({width:'300px'})
+        })
+        $('img').mouseover(function(){
+            $('img').animate({width:'300px'})
+        })
+        $('img').mouseleave(function(){
+            $('img').animate({width:'100px'})
+        })
+
+    })
+</script>
+</head>
+<body>
+    <div style="text-align:center;">
+    <button class="b1">100픽셀</button>
+    <button class="b2">200픽셀</button>
+    <button class="b3">300픽셀</button>
+    <hr>
+    <img id="pic1" src="../resources/images/car01.png">
+</div>
+</body>
+</html>

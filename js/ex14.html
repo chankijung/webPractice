@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+ /*   $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide()
+        })
+    })
+    */
+/*    $().ready(function(){
+        $("button").click(function(){
+            $("p").hide()
+        })
+    })*/
+    // 도큐먼트 생략 가능
+/*    $(function(){
+        $("button").click(function(){
+            $("p").hide()
+        })
+    })*/
+    function test(){
+        $('p').hide()
+        // .~~ 클래스 지정
+        // #~~ 아이디 지정
+    }
+    $(function(){
+        $("#btn").click(function(){
+            $("p").show()
+        })
+    })
+</script>
+
+
+</head>
+<body>
+    <!-- 자바스크립트에서 파생된 것들 : view, react 등등
+        jquery는 요즘엔 많이 안씀(쓰긴 씀)- 자바스크립트에 비해 엄청 간결
+        이것저것 하면 많으니까 하나 골라서 하는게 나음
+
+        jquery 파일을 직접 받아서 넣는 case도 있고
+        jquery cdn을 이용해서 실행할 수도 있음
+     -->
+     <p>안녕하세요</p>
+     <button onclick="test()">메시지 삭제</button>
+     <button id="btn">메시지 확인</button>
+     
+
+</body>
+</html>

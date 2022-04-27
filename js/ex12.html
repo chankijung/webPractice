@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+function lightOn(){
+    document.getElementById("img").src="../resources/images/light_on.jpg"
+}
+function lightOff(){
+    document.getElementById("img").src="../resources/images/light_off.jpg"
+}
+function test1(){
+    document.getElementById("a").style.display ="none"
+    document.getElementById("b").style.display ="block"
+}
+function test2(){
+    document.getElementById("b").style.display ="block"
+    document.getElementById("a").style.display ="none"
+}
+</script>
+<style type="text/css">
+    #b{display: none;}
+</style>
+</head>
+
+<body>
+    <div style="background-color:aqua; width: 100px; height: 100px;" onmouseover="test1()" onmouseout="test2()">
+        <div id="a">안녕하세요</div>
+        <div id="b">
+            <a href="#">클릭</a>
+        </div>
+    </div>
+    <hr>
+    <img id="img" src="../resources/images/light_on.jpg" onmousedown="lightOn()" onmouseup="lightOff()"
+                    width="150px" height="150px">
+</body>
+</html>

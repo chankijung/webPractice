@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("button.a").click(function(){
+            $("h1").addClass("blue")
+            $("h1").animate({'background-color':'red',
+                        'font-size':'500%'})
+            //.css 는 한방에 css가 적용
+            //.animate는 진행과정 보여줌
+                        
+        })
+        $("button.b").click(function(){
+            $("h1").removeClass("blue")
+        })
+        $("button.t").click(function(){
+            $("h1").toggleClass("red")
+        })
+    })
+    
+</script>
+<style>
+    .blue{color:blue;}
+    .red{background-color: red;}
+</style>
+</head>
+<body>
+    <h1>aaaa</h1>
+    <button class="a">적용</button>
+    <button class="b">빼기</button>
+    <button class="t">toggle</button>
+
+</body>
+</html>

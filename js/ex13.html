@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript">
+    function init(){
+        var t1=document.getElementById('target1')
+        var t2=document.getElementById('target2')
+        t1.addEventListener('click', btn_listener)
+        t2.addEventListener('click', btn_listener)
+    }
+    function btn_listener(){
+        console.log(event.target.id)
+        switch(event.target.id){
+        case 'target1' :
+           // alert('1111')
+            document.getElementById('rm').setAttribute('class','a')
+            break;
+        case 'target2':
+           // alert('2222')
+            document.getElementById('rm').removeAttribute('class')
+            break;
+    }
+    }
+</script>
+<style type="text/css">
+    #rm{display: none;}
+    #rm.a{display: block; background-color: aqua;}
+
+</style>
+</head>
+<body onload="init()">
+    <div id="rm">안녕하세요</div>
+    <hr>
+    <input type="button" id="target1" value="button1">
+    <input type="button" id="target2" value="button2">
+</body>
+</html>
