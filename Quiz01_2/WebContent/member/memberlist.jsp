@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<header style="text-align:center; background-color: blue;">
-		<h1>쇼핑몰 회원관리 ver1.0</h1>
-	</header>
-
+memberlist.jsp
 </body>
 </html>
